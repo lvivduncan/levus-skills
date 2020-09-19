@@ -1,5 +1,17 @@
-/* блок, в якому і буде анімація*/
+*,
+ ::after,
+ ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
 
-.levus-skills {
-    /**/
+#example {
+    margin: 100px;
+    padding: 10px;
+    display: flex
+}
+
+#example>* {
+    width: 33.3333%
 }
