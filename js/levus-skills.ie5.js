@@ -18,11 +18,10 @@
   };
 
   var skills = document.querySelectorAll('.levus-skills');
-
   var start = document.documentElement.clientHeight;
   window.addEventListener('scroll', function () {
-    var change = skills[0].getBoundingClientRect().top;
-    var sum = start - change + 10;
+    var change = Math.floor(skills[0].getBoundingClientRect().top);
+    var sum = Math.floor(start - change + 10);
 
     if (sum === 0 || sum === 1 || sum === 2 || sum === 3 || sum === 4 || sum === 5 || sum === 6 || sum === 7) {
       skills.forEach(function (skill) {
